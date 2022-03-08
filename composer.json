@@ -1,0 +1,32 @@
+{
+    "name": "itfengfanzhe/dcat-admin-cms-setting",
+    "alias": "",
+    "description": "dcat后台设置扩展",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension", "setting"],
+    "homepage": "https://github.com/dcat-admin/cms-setting",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "张建伟",
+            "email": "itfengfanzhe@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dcat\\Admin\\CmsSetting\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Dcat\\Admin\\CmsSetting\\CmsSettingServiceProvider",
+        "laravel": {
+            "providers": [
+                "Dcat\\Admin\\CmsSetting\\CmsSettingServiceProvider"
+            ]
+        }
+    }
+}
