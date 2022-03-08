@@ -47,9 +47,9 @@ class SettingForm extends Form implements LazyRenderable
      */
     public function form()
     {
-        $this->text("title", '网站标题');
-        $this->text("sub_title", '网站副标题');
-        $this->image("logo", '网站logo')->uniqueName();
+        $this->text("title", '网站标题(title)');
+        $this->text("sub_title", '网站副标题(sub_title)');
+        $this->image("logo", '网站logo(logo)')->uniqueName();
     }
 
     /**

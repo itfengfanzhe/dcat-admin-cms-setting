@@ -109,17 +109,17 @@ class OtherSettingForm extends Form implements LazyRenderable
                     }
                 }
                 if ($type == 'text') {
-                    $this->text($field, $label);
+                    $this->text($field, $label."($field)");
                 } else if ($type == 'radio') {
-                    $this->radio($field, $label)->options($options);
+                    $this->radio($field, $label."($field)")->options($options);
                 } elseif ($type == 'checkbox') {
-                    $this->checkbox($field, $label)->options($options);
+                    $this->checkbox($field, $label."($field)")->options($options);
                 } else if ($type == 'select') {
-                    $this->select($field, $label)->options($options);
+                    $this->select($field, $label."($field)")->options($options);
                 } else if ($type == 'textarea') {
-                    $this->textarea($field, $label);
+                    $this->textarea($field, $label."($field)");
                 } else if ($type == 'image') {
-                    $this->image($field, $label)->uniqueName();
+                    $this->image($field, $label."($field)")->uniqueName();
                 }
             }
         });
